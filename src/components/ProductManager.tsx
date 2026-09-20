@@ -245,13 +245,7 @@ export default function ProductManager() {
 
   const saleCount = displayedProducts.filter((product) => product.onSale).length;
   
-  React.useEffect(() => {
-  fetch("https://fakestoreapi.com/products")
-    .then((res) => res.json()).then((data) => {
-        setProducts(data);
-    })
-    .catch((err) => console.error("Fetch failed", err));
-}, []);
+ 
 
   return (
     <div className="space-y-8 p-15">
