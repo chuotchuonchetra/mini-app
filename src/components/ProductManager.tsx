@@ -224,7 +224,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({ initialValues, onSubmi
 
 // Root Parent Component
 export default function ProductManager() {
-  const [products, setProducts] = useState<PublicProduct[] | null>(null);
+  const [products, setProducts] = useState<PublicProduct[] | null>(INITIAL_PRODUCTS);
   const [inStockOnly, setInStockOnly] = useState<boolean>(false);
 
   const handleAddProduct = (draft: ProductFormDraft): void => {
