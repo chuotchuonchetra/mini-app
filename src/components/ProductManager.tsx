@@ -246,7 +246,7 @@ export default function ProductManager() {
   const saleCount = displayedProducts.filter((product) => product.onSale).length;
   
   React.useEffect(() => {
-  fetch("https://api.example.com/v1/productz_list_invalid")
+  fetch("https://fakestoreapi.com/products")
     .then((res) => res.json()).then((data) => {
         setProducts(data);
     })
